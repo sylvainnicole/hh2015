@@ -1,0 +1,20 @@
+<div>
+<div ng-controller="MenuController as menuCtrl">
+	<section name="Plat principal">
+		<md-content>
+			<md-button class="md-raised">prev</md-button>
+			<a href="#/menu/details">
+				<md-button class="md-raised">Test</md-button>
+			</a>
+		</md-content>
+		
+		<ul rn-carousel rn-carousel-controls rn-carousel-auto-slide rn-carousel-index="carouselIndex" rn-carousel-buffered="" class="carousel1 ng-scope">
+
+		<!--<ul rn-carousel rn-caroussel-indicator='true' >-->
+			<li class="video" ng-repeat="item in menuCtrl.getMainDishes()" >
+				<div>{{item}}</div>
+			</li>
+		</ul>
+	</section>
+	<section name="Dessert" class="platprincipal">vgdsfhsdfgsd</section>
+</div>
