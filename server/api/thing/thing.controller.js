@@ -16,10 +16,12 @@ exports.index = function(req, res) {
   res.json([
   {
   name : 'Profile',
-  info : 'Définir votre profil personel.'
+  info : 'Définir votre profil personel.',
+  url: '#/profile'
   }, {
   name : 'Menu',
-  info : 'Choisir mon plat.'
+  info : 'Choisir mon plat.',
+  url: '#/menu'
   }, {
   name : 'Ma journée',
   info : 'Build system ignores `spec` files, allowing you to keep tests alongside code. Automatic injection of scripts and styles into your index.html'
