@@ -1,20 +1,28 @@
-<div>
 <div ng-controller="MenuController as menuCtrl">
-	<section name="Plat principal">
-		<md-content>
-			<md-button class="md-raised">prev</md-button>
-			<a href="#/menu/details">
-				<md-button class="md-raised">Test</md-button>
-			</a>
-		</md-content>
-		
-		<ul rn-carousel rn-carousel-controls rn-carousel-auto-slide rn-carousel-index="carouselIndex" rn-carousel-buffered="" class="carousel1 ng-scope">
-
-		<!--<ul rn-carousel rn-caroussel-indicator='true' >-->
-			<li class="video" ng-repeat="item in menuCtrl.getMainDishes()" >
-				<div>{{item}}</div>
-			</li>
-		</ul>
+	<div layout="column" class="stats">
+		<p>Protéine: {{menuCtrl.totalProtein}}</p>
+		<p>Céréales: {{menuCtrl.totalCereal}}</p>
+		<p>Sucres: {{menuCtrl.totalSugar}}</p>
+	<div>
+	<section>
+		<input type="button" ng-click="menuCtrl.prevMeal()" value="Prev"/>
+		<a ng-href="#/menu/details">{{menuCtrl.currentMeal.name}}</a>
+		<input type="button" ng-click="menuCtrl.nextMeal()" value="Next"/>
+	</section>
+	<br/>
+	<ul rn-carousel rn-caroussel-indicator='true' >
+		<li class="video" ng-repeat="item in menuCtrl.getMainDishes()" >
+			<div>{{item}}</div>
+		</li>
+	</ul>
 	</section>
 	<section name="Dessert" class="platprincipal">vgdsfhsdfgsd</section>
+  	<div class="demo-swipe" ng-swipe-left="onSwipeLeft()">
+    	<span class="no-select"> Swipe me to the left</span>
+  	</div>
+  	<md-divider></md-divider>
+  	<div class="demo-swipe" ng-swipe-right="onSwipeRight()">
+    	<span class="no-select"> Swipe me to the right</span>
+  	</div>
+</div>
 </div>
