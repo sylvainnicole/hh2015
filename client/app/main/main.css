@@ -28,3 +28,24 @@
     margin-top: 70px;
     border-top: 1px solid #E5E5E5;
 }
+
+.platprincipal {
+    background-color: #4393B9;
+    margin: 5px 5px 5px 5px;
+}
+
+.video {
+    background-size: cover;
+    position:relative;
+    background-image: url('../menu/images/yeoman.png');
+}
+.video div {
+    font-size:10px;
+    width: 100%;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    padding: 5px;
+    position:absolute;
+    box-sizing: border-box;
+}
