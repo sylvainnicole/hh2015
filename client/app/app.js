@@ -5,7 +5,10 @@ angular.module('gitHubApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'ngMaterial',
+  'ngTouch',
+  'angular-carousel'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider

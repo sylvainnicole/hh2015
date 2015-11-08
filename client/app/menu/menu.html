@@ -1,27 +1,29 @@
 <div ng-controller="MenuController as menuCtrl">
-	<div layout="column" class="stats">
+	<div class="stats">
 		<p>Protéine: {{menuCtrl.totalProtein}}</p>
 		<p>Céréales: {{menuCtrl.totalCereal}}</p>
 		<p>Sucres: {{menuCtrl.totalSugar}}</p>
 	<div>
-	<section>
+	
+	<section >
 		<input type="button" ng-click="menuCtrl.prevMeal()" value="Prev"/>
 		<a ng-href="#/menu/details">{{menuCtrl.currentMeal.name}}</a>
 		<input type="button" ng-click="menuCtrl.nextMeal()" value="Next"/>
 	</section>
+	
 	<br/>
 	<ul rn-carousel rn-caroussel-indicator='true' >
-		<li class="video" ng-repeat="item in menuCtrl.getMainDishes()" >
-			<div>{{item}}</div>
+		<li ng-repeat="item in menuCtrl.getMainDishes()" >
+			<div>{{item.name}}</div>
 		</li>
 	</ul>
 	</section>
 	<section name="Dessert" class="platprincipal">vgdsfhsdfgsd</section>
-  	<div class="demo-swipe" ng-swipe-left="onSwipeLeft()">
+  	<div class="demo-swipe" md-swipe-left="menuCtrl.onSwipeLeft()">
     	<span class="no-select"> Swipe me to the left</span>
   	</div>
   	<md-divider></md-divider>
-  	<div class="demo-swipe" ng-swipe-right="onSwipeRight()">
+  	<div class="demo-swipe" md-swipe-right="menuCtrl.onSwipeRight()">
     	<span class="no-select"> Swipe me to the right</span>
   	</div>
 </div>
