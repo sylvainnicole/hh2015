@@ -1,8 +1,44 @@
-<div class="statscontainer" ng-controller="MenuDetailsController as menuDetailsCtrl">
+<div class="boitier" ng-controller="MenuDetailsController as menuDetailsCtrl">
 	<div>
 		<p class="mealheader">{{menuDetailsCtrl.currentMeal.name}}</p>
-		<ul>
-			<li>Current</li>
-		</ul>
+		<p/>
+		<p/>
+		<div class="backimage">
+		<table width="100%">
+			<tr>
+				<td class="alignleft">Calories</td>
+				<td class="alignright">{{menuDetailsCtrl.currentMeal.nutrition.calories}}</td>
+			</tr>
+			<tr>
+				<td class="alignleft">Gras</td>
+				<td class="alignright">{{menuDetailsCtrl.currentMeal.nutrition.fat}}</td>
+			</tr>			
+			<tr>
+				<td class="alignleft">Gras satures</td>
+				<td class="alignright">{{menuDetailsCtrl.currentMeal.nutrition.saturated_fat}}</td>
+			</tr>
+			<tr>
+				<td class="alignleft">Gras satures</td>
+				<td class="alignright">{{menuDetailsCtrl.currentMeal.nutrition.saturated_fat}}</td>
+			</tr>			
+			<tr>
+				<td class="alignleft">Sodium</td>
+				<td class="alignright">{{menuDetailsCtrl.currentMeal.nutrition.sodium}}</td>
+			</tr>		
+			<tr>
+				<td class="alignleft">Carbohydrate</td>
+				<td class="alignright">{{menuDetailsCtrl.currentMeal.nutrition.carbohydrate}}</td>
+			</tr>
+			<tr>
+				<td class="alignleft">Sugar</td>
+				<td class="alignright">{{menuDetailsCtrl.currentMeal.nutrition.sugar}}</td>
+			</tr>			<tr>
+				<td class="alignleft">fiber</td>
+				<td class="alignright">{{menuDetailsCtrl.currentMeal.nutrition.fiber}}</td>
+			</tr>			<tr>
+				<td class="alignleft">Carboproteinhydrate</td>
+				<td class="alignright">{{menuDetailsCtrl.currentMeal.nutrition.protein}}</td>
+			</tr>					
+		</table><div>
 	</div>
 </div>

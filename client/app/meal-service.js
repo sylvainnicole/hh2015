@@ -7,15 +7,16 @@ angular.module('gitHubApp')
 				{
 					id: 1,
 					name: 'Soupe jardinière',
-					nutrive: {
-						calories: 53.8,
-						lipides: 0.9,
-						grassatures: 0.2,
-						sodium: 573, 
-						glucides: 10.2,
-						fibres: 1.5,
-						proteines: 2
-					}
+					"nutrition": {
+							"calories":122,
+							"fat":5.7,
+							"saturated_fat":0.6,
+							"sodium":509,
+							"carbohydrate":14.2,
+							"sugar":13,
+							"fiber":1.2,
+							"protein":4
+						}
 				},
 				{
 					id: 2,

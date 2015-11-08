@@ -1,30 +1,47 @@
-<div ng-controller="MenuController as menuCtrl">
-	<div class="stats">
-		<p>Protéine: {{menuCtrl.totalProtein}}</p>
-		<p>Céréales: {{menuCtrl.totalCereal}}</p>
-		<p>Sucres: {{menuCtrl.totalSugar}}</p>
+<div ng-controller="MenuController as menuCtrl" class="boitier">
+	<div >
+		<img ng-src="{{menuCtrl.flImg}}" height="42" width="42"/>
+		<!--<img src="app/menu/images/FL-bouton-vide.png" height="42" width="42"/>-->
+		<img src="app/menu/images/PL-bouton-vide.png" height="42" width="42"/>
+		<img src="app/menu/images/PP-bouton-vide.png" height="42" width="42"/>
+		<img src="app/menu/images/PC-bouton-vide.png" height="42" width="42"/>
+		<hr/>
 	<div>
 	
 	<section >
+		<p class="mealheader" md-swipe-left="menuCtrl.nexMeal()" md-swipe-right="menuCtrl.prevMeal()">
+			<a ng-href="#/menu/details/{{menuCtrl.currentMeal.id}}">{{menuCtrl.currentMeal.name}}</a>
+		</p>
 		<input type="button" ng-click="menuCtrl.prevMeal()" value="Prev"/>
-		<a ng-href="#/menu/details/{{menuCtrl.currentMeal.id}}">{{menuCtrl.currentMeal.name}}</a>
 		<input type="button" ng-click="menuCtrl.nextMeal()" value="Next"/>
 	</section>
-	
 	<br/>
+	<section>
+		<p class="mealheader" md-swipe-left="menuCtrl.nextSoup()" md-swipe-right="menuCtrl.prevSoup()">
+			<a ng-href="#/menu/details/{{menuCtrl.currentSoup.id}}">{{menuCtrl.currentSoup.name}}</a>
+		</p>
+		<input type="button" ng-click="menuCtrl.prevSoup()" value="Prev"/>
+		<input type="button" ng-click="menuCtrl.nextSoup()" value="Next"/>
+	</section>		
+	<section>
+		<p class="mealheader" md-swipe-left="menuCtrl.nextSide()" md-swipe-right="menuCtrl.prevSide()">
+			<a ng-href="#/menu/details/{{menuCtrl.currentSide.id}}">{{menuCtrl.currentSide.name}}</a>
+		</p>
+		<input type="button" ng-click="menuCtrl.prevSide()" value="Prev"/>
+		<input type="button" ng-click="menuCtrl.nextSide()" value="Next"/>
+	</section>
+	<section>
+		<p class="mealheader" md-swipe-left="menuCtrl.nextDessert()" md-swipe-right="menuCtrl.prevSide()">
+			<a ng-href="#/menu/details/{{menuCtrl.currentDessert.id}}">{{menuCtrl.currentDessert.name}}</a>
+		</p>
+		<input type="button" ng-click="menuCtrl.prevDessert()" value="Prev"/>
+		<input type="button" ng-click="menuCtrl.nextDessert()" value="Next"/>
+	</section>
 	<ul rn-carousel rn-caroussel-indicator='true' >
 		<li ng-repeat="item in menuCtrl.getMainDishes()" >
 			<div>{{item.name}}</div>
 		</li>
 	</ul>
 	</section>
-	<section name="Dessert" class="platprincipal">vgdsfhsdfgsd</section>
-  	<div class="demo-swipe" md-swipe-left="menuCtrl.onSwipeLeft()">
-    	<span class="no-select"> Swipe me to the left</span>
-  	</div>
-  	<md-divider></md-divider>
-  	<div class="demo-swipe" md-swipe-right="menuCtrl.onSwipeRight()">
-    	<span class="no-select"> Swipe me to the right</span>
-  	</div>
 </div>
 </div>
