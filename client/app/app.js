@@ -7,8 +7,7 @@ angular.module('gitHubApp', [
   'ngRoute',
   'ui.bootstrap',
   'ngMaterial',
-  'ngTouch',
-  'angular-carousel'
+  'ngTouch'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider

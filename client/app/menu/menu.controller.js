@@ -84,12 +84,13 @@
 				if (currentMealIndex > 0)
 					currentMealIndex--;
 				vm.currentMeal = mainDishes[currentMealIndex];
+				computeTotalSugar();
 			};
 			this.nextMeal = function() {
 
 				if (currentMealIndex < mainDishes.length - 1 )
 					currentMealIndex++;
-					vm.currentMeal = mainDishes[currentMealIndex];
+				vm.currentMeal = mainDishes[currentMealIndex];
 				computeTotalSugar();
 			};
 			
@@ -97,12 +98,13 @@
 				if (currentSoupIndex > 0)
 					currentSoupIndex--;
 				vm.currentSoup = soups[currentSoupIndex];
+				computeTotalSugar();
 			};
 			this.nextSoup = function() {
 
 				if (currentSoupIndex < soups.length - 1 )
 					currentSoupIndex++;
-					vm.currentSoup = soups[currentSoupIndex];
+				vm.currentSoup = soups[currentSoupIndex];
 				computeTotalSugar();
 			};
 			
@@ -110,12 +112,14 @@
 				if (currentSideIndex > 0)
 					currentSideIndex--;
 				vm.currentSide = sides[currentSideIndex];
+				computeTotalSugar();
+				
 			};
 			this.nextSide = function() {
 
 				if (currentSideIndex < sides.length - 1 )
 					currentSideIndex++;
-					vm.currentSide = sides[currentSideIndex];
+				vm.currentSide = sides[currentSideIndex];
 				computeTotalSugar();
 			};
 			
@@ -123,12 +127,13 @@
 				if (currentDessertIndex > 0)
 					currentDessertIndex--;
 				vm.currentDessert = desserts[currentDessertIndex];
+				computeTotalSugar();
 			};
 			this.nextDessert = function() {
 
 				if (currentDessertIndex < sides.length - 1 )
 					currentDessertIndex++;
-					vm.currentDessert = desserts[currentDessertIndex];
+				vm.currentDessert = desserts[currentDessertIndex];
 				computeTotalSugar();
 			};
 			function computeTotalSugar() {
@@ -138,19 +143,19 @@
 				var pl = computePl();
 				var pc = computePc();
 				
-				if ( fl < 3 ) vm.flImg = flImages[0];
-				if ( fl >= 3 && fl < 5) vm.flImg = flImages[1];
-				if ( fl >= 5 ) vm.flImg = flImages[2];
+				if ( fl < 1 ) vm.flImg = flImages[0];
+				if ( fl >= 1 && fl < 2) vm.flImg = flImages[1];
+				if ( fl >= 2 ) vm.flImg = flImages[2];
 				
-				if ( pp < 2 ) vm.ppImg = ppImages[0];
-				if ( pp >= 2 ) vm.ppImg = ppImages[1];
+				if ( pp < 1 ) vm.ppImg = ppImages[0];
+				if ( pp >= 1 ) vm.ppImg = ppImages[1];
 				
-				if ( pl < 2 ) vm.plImg = plImages[0];
+				if ( pl < 1 ) vm.plImg = plImages[0];
 				if ( pl >= 2 ) vm.plImg = plImages[1];
 				
-				if ( pc < 3 ) vm.pcImg = pcImages[0];
-				if ( pc >= 2 && pc < 5) vm.pcImg = pcImages[1];
-				if ( pc >= 5 ) vm.pclImg = pcImages[2];
+				if ( pc < 1 ) vm.pcImg = pcImages[0];
+				if ( pc >= 1 && pc < 2) vm.pcImg = pcImages[1];
+				if ( pc >= 2 ) vm.pclImg = pcImages[2];
 				
 			};
 			

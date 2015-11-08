@@ -7,6 +7,16 @@
     margin-top: -20px;
 }
 
+th, td {
+    padding: 5px;
+}
+
+.flexcentered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #banner h1 {
     font-size: 60px;
     line-height: 1;
