@@ -1,7 +1,7 @@
 'use strict';
 
 var menuparser = require("./menuparser.js");
-var menu = new menuparser("../config/menuitems.json");
+var menu = new menuparser("config/menuitems.json");
 
 var express = require('express');
 var router = express.Router();
