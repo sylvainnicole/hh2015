@@ -1,0 +1,26 @@
+[
+   {
+      "id":,
+      "type":"",
+      "name":"",
+      "nutrition": {
+         "calories":,
+         "fat":,
+         "saturated_fat":,
+         "carbohydrate":,
+         "sugar":,
+         "fiber":,
+         "sodium":,
+         "protein":,
+      },
+      "category": {
+         "vegetable":,
+         "fruit":,
+         "grain":,
+         "milk":,
+         "meat":
+      },
+      "tags": [
+      ]
+   }
+]

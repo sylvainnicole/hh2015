@@ -1,0 +1,194 @@
+[
+   {
+      "id":1001,
+      "type":"soup",
+      "name":"soupe jardinière",
+      "nutrition": {
+         "calories":53.8,
+         "fat":0.9,
+         "saturated_fat":0.2,
+         "sodium":573,
+         "carbohydrate":10.2,
+         "sugar":8.7,
+         "fiber":1.5,
+         "protein":2
+      },
+      "category": {
+         "vegetable":1,
+         "fruit":0,
+         "grain":0,
+         "milk":0,
+         "meat":0
+      },
+      "tags": [
+      ]
+   },
+   {
+      "id":1002,
+      "type":"soup",
+      "name":"crème de carottes",
+      "nutrition": {
+         "calories":122,
+         "fat":5.7,
+         "saturated_fat":0.6,
+         "sodium":509,
+         "carbohydrate":14.2,
+         "sugar":13,
+         "fiber":1.2,
+         "protein":4
+      },
+      "category": {
+         "vegetable":1,
+         "fruit":0,
+         "grain":0,
+         "milk":0,
+         "meat":0
+      },
+      "tags": [
+      ]
+   },
+   {
+      "id":1003,
+      "type":"main",
+      "name":"saumon en croûte panko sauce au yogourt",
+      "nutrition": {
+         "calories":319.7,
+         "fat":20.8,
+         "saturated_fat":4.8,
+         "sodium":285.3,
+         "carbohydrate":6.9,
+         "sugar":6.6,
+         "fiber":0.3,
+         "protein":25.1
+      },
+      "category": {
+         "vegetable":1,
+         "fruit":0,
+         "grain":0,
+         "milk":0.5,
+         "meat":0
+      },
+      "tags": [
+      ]
+   },
+   {
+      "id":1004,
+      "type":"main",
+      "name":"lasagne",
+      "nutrition": {
+         "calories":384,
+         "fat":12.6,
+         "saturated_fat":6,
+         "sodium":570,
+         "carbohydrate":40,
+         "sugar":36.7,
+         "fiber":3.3,
+         "protein":27.2
+      },
+      "category": {
+         "vegetable":1,
+         "fruit":0,
+         "grain":2,
+         "milk":0,
+         "meat":1
+      },
+      "tags": [
+      ]
+   },
+   {
+      "id":1005,
+      "type":"sides",
+      "name":"haricots",
+      "nutrition": {
+         "calories":21,
+         "fat":0.1,
+         "saturated_fat":0,
+         "sodium":0.8,
+         "carbohydrate":4.8,
+         "sugar":2.6,
+         "fiber":2.2,
+         "protein":1.1
+      },
+      "category": {
+         "vegetable":1,
+         "fruit":0,
+         "grain":0,
+         "milk":0,
+         "meat":0
+      },
+      "tags": [
+      ]
+   },
+   {
+      "id":1006,
+      "type":"sides",
+      "name":"riz",
+      "nutrition": {
+         "calories":142,
+         "fat":0.4,
+         "saturated_fat":0.1,
+         "sodium":241.9,
+         "carbohydrate":30.1,
+         "sugar":29.1,
+         "fiber":1,
+         "protein":3.4
+      },
+      "category": {
+         "vegetable":0,
+         "fruit":0,
+         "grain":1,
+         "milk":0,
+         "meat":0
+      },
+      "tags": [
+      ]
+   },
+   {
+      "id":1007,
+      "type":"dessert",
+      "name":"yogourt grec aux fraises",
+      "nutrition": {
+         "calories":100,
+         "fat":2,
+         "saturated_fat":1,
+         "sodium":40,
+         "carbohydrate":14,
+         "sugar":14,
+         "fiber":0,
+         "protein":8
+      },
+      "category": {
+         "vegetable":0,
+         "fruit":0,
+         "grain":0,
+         "milk":1,
+         "meat":0
+      },
+      "tags": [
+      ]
+   },
+   {
+      "id":1008,
+      "type":"dessert",
+      "name":"tarte aux sucres",
+      "nutrition": {
+         "calories":451.5,
+         "fat":13.2,
+         "saturated_fat":3.5,
+         "sodium":52.2,
+         "carbohydrate":79.4,
+         "sugar":78.7,
+         "fiber":0.7,
+         "protein":5.4
+      },
+      "category": {
+         "vegetable":0,
+         "fruit":0,
+         "grain":0,
+         "milk":0,
+         "meat":0
+      },
+      "tags": [
+      ]
+   }
+]
