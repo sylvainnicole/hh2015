@@ -1,0 +1,10 @@
+<div class="statscontainer" ng-controller="MenuDetailsController as menuDetailsCtrl">
+	<div>
+		<p class="mealheader">{{menuDetailsCtrl.currentMeal.name}}</p>
+		<ul>
+			<li ng-repeat="nutriInfo in menuDetailsCtrl.getNutriInformations()">
+				{{nutriInfo.name}}: {{nutriInfo}}
+			</li>
+		</ul>
+	</div>
+</div>
