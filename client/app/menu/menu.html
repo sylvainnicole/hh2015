@@ -7,7 +7,7 @@
 	
 	<section >
 		<input type="button" ng-click="menuCtrl.prevMeal()" value="Prev"/>
-		<a ng-href="#/menu/details">{{menuCtrl.currentMeal.name}}</a>
+		<a ng-href="#/menu/details/{{menuCtrl.currentMeal.id}}">{{menuCtrl.currentMeal.name}}</a>
 		<input type="button" ng-click="menuCtrl.nextMeal()" value="Next"/>
 	</section>
 	

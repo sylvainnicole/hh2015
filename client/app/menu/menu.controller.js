@@ -6,18 +6,21 @@
 			var currentMealIndex = 0;
 			var mainDishes = [
 				{
+					id: 1,
 					name: 'Poulet',
 					sugar: 10,
 					protein: 20,
 					cereal: 30
 				},
 				{
+					id: 2,
 					name: 'Poisson',
 					sugar: 20,
 					protein: 40,
 					cereal: 35					
 				}, 
 				{
+					id:3,
 					name: 'Steak',
 					sugar: 30,
 					protein: 50,
