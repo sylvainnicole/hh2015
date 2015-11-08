@@ -35,10 +35,3 @@ MenuParser.prototype.retrieveTags = function() {
 }
 
 module.exports = MenuParser; 
-
-//console.log("\n *STARTING* \n");
-//var menuitem = new MenuParser("../../config/menuitems.json");
-//console.log(menuitem.jsonContent);
-//console.log(menuitem.retrieveTags());
-//console.log(menuitem.retrieveItemPerType("dessert"));
-//console.log("\n *ENDING* \n");

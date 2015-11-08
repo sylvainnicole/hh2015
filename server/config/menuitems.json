@@ -62,11 +62,11 @@
          "protein":25.1
       },
       "category": {
-         "vegetable":1,
+         "vegetable":0,
          "fruit":0,
          "grain":0,
          "milk":0.5,
-         "meat":0
+         "meat":1
       },
       "tags": [
       ]
