@@ -151,7 +151,7 @@
 				if ( pp >= 1 ) vm.ppImg = ppImages[1];
 				
 				if ( pl < 1 ) vm.plImg = plImages[0];
-				if ( pl >= 2 ) vm.plImg = plImages[1];
+				if ( pl >= 1 ) vm.plImg = plImages[1];
 				
 				if ( pc < 1 ) vm.pcImg = pcImages[0];
 				if ( pc >= 1 && pc < 2) vm.pcImg = pcImages[1];

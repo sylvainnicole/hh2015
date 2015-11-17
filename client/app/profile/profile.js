@@ -5,8 +5,13 @@
 		.config( function($routeProvider) {
 			$routeProvider.when('/profile', {
 				templateUrl: 'app/profile/profile.html',
-				controllser: 'ProfileController',
+				controller: 'ProfileController',
 				controllerAs: 'profileCtrl'
 			});
-});
+			$routeProvider.when('/individual-profile', {
+				templateUrl: 'app/profile/individual-profile.html',
+				controller: 'IndividualProfilController',
+				controllerAs: 'individualProfileCtrl'
+			});		
+	});
 })();
